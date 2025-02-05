@@ -1,7 +1,9 @@
+import HomeSection from "./Sections/HomeSection";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-6xl">starting project</h1>
+      <HomeSection />
     </div>
   );
 }
