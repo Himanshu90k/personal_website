@@ -11,6 +11,7 @@ export default {
       colors: {
         customRed: '#E50F0F',
         customPurple: '#CC56FF',
+        blackBg: '#141212',
       },
       fontFamily: {
         josefin: ["var(--josefin-sans)"],
@@ -25,6 +26,7 @@ export default {
       },
       height: {
         120: '30rem',
+        260: '88.25rem',
       },
       backgroundImage: {
         homeBg: 'radial-gradient(55.94% 238.07% at 33.15% 50%, #311F4E 0%, #000 100%)',
@@ -37,6 +39,9 @@ export default {
       borderWidth: {
         '8px': '8px',
         '4px': '4px',
+      },
+      boxShadow: {
+        'line-shadow': '0px 0px 4px 0px #FFF',
       },
     },
   },

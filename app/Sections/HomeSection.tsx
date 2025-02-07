@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "../Components/Navbar";
 import Leetcode from "../Components/icons/Leetcode";
 import Github from "../Components/icons/Github";
 import Linkedin from "../Components/icons/Linkedin";
@@ -18,11 +17,8 @@ const HomeSection = () => {
                 <source src="/bgVideo.mp4" type="video/mp4" />
             </video>
 
-            {/* navbar */}
-            <Navbar />
-
             {/* photo - introduction */}
-            <main className="absolute -z-10 w-screen h-full inset-0 flex flex-col items-center gap-9 justify-end pb-9">
+            <main className="absolute w-screen h-full inset-0 flex flex-col items-center gap-9 justify-end pb-9">
                 <div className="flex justify-between items-center gap-10 w-9/12">
                     {/* photo card */}
                     <div className="w-72 h-120 rounded-4.5-xl border-transparent photoBorder border-8px">

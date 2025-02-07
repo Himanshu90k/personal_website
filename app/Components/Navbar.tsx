@@ -2,7 +2,7 @@ import ContactButton from "./ContactButton";
 
 const Navbar = () => {
     return (
-        <div className="flex w-full justify-center pt-7">
+        <div className="fixed z-20 top-0 flex w-full justify-center pt-7">
             <nav className="flex justify-between w-11/12 items-center">
                 <h1 className="font-josefin text-white text-5xl font-bold">H.R</h1>
 
