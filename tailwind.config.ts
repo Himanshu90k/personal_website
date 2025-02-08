@@ -29,6 +29,7 @@ export default {
       },
       height: {
         50: '12.5rem',
+        82: '21.25rem',
         100: '25rem',
         120: '30rem',
         260: '88.25rem',
@@ -37,6 +38,7 @@ export default {
         homeBg: 'radial-gradient(55.94% 238.07% at 33.15% 50%, #311F4E 0%, #000 100%)',
         photoBorder: 'linear-gradient(180deg, #569FFF 0%, #CC56FF 100%) border-box',
         skillCard: 'radial-gradient(50% 50% at 50% 50%, #000 0%, #151716 100%)',
+        nextCard: 'linear-gradient(90deg, #A922F1 0%, #E50F0F 100%)',
       },
       borderRadius: {
         '4.5-xl': '2rem',
@@ -48,6 +50,7 @@ export default {
       },
       boxShadow: {
         'line-shadow': '0px 0px 4px 0px #FFF',
+        'next-line-shadow': '0px 0px 9px 0px #FFF',
         'react-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
         'skill-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
       },

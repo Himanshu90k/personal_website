@@ -5,7 +5,7 @@ import Arrow from "../icons/Arrow";
 
 const TypeScriptCard = () => {
     return (
-        <div className="absolute left-[42%]  top-1/3 overflow-visible">
+        <div className="absolute left-[42%]  top-[15%] overflow-visible">
             <div className="relative w-100 h-50 overflow-visible">
                 <Image
                     src={TypeScriptBg}

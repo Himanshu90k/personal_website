@@ -3,7 +3,7 @@ import Arrow from "../icons/Arrow";
 
 const CssCard = () => {
     return (
-        <div className="absolute left-[45%] top-[65%] bg-skillCard shadow-skill-card-shadow w-50 h-100">
+        <div className="absolute left-[45%] top-[30%] bg-skillCard shadow-skill-card-shadow w-50 h-100">
             <CssIcon />
 
             <div className="w-fit flex flex-col gap-2 absolute bottom-14 left-[21%] z-10">

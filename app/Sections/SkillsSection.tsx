@@ -5,6 +5,7 @@ import TypeScriptCard from "../Components/skill_cards/TypeScriptCard";
 import HtmlCard from "../Components/skill_cards/HtmlCard";
 import CssCard from "../Components/skill_cards/CssCard";
 import TailwindCard from "../Components/skill_cards/TailwindCard";
+import NextJsCard from "../Components/skill_cards/NextJsCard";
 
 
 const SkillsSection = () => {
@@ -25,6 +26,15 @@ const SkillsSection = () => {
             <HtmlCard />
             <CssCard />
             <TailwindCard />
+            <NextJsCard />
+
+            {/* Skill Line */}
+            <div className="flex flex-col w-fit items-center pl-12">
+                <GlowingCircle px={9} sign="+" />
+                {/* line */}
+                <div className="w-2 h-260 bg-white shadow-line-shadow"></div>
+                <GlowingCircle px={9} sign="-" />
+            </div>
         </section>
     )
 };
