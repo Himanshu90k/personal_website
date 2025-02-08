@@ -15,22 +15,28 @@ export default {
       },
       fontFamily: {
         josefin: ["var(--josefin-sans)"],
+        inter: ["var(--inter)"],
       },
       fontSize: {
         '4.5xl': '2.5rem',
       },
       width: {
+        50: '12.5rem',
+        100: '25rem',
         210: '52.25rem',
         '9/20': '45%',
         '17/20': '85%',
       },
       height: {
+        50: '12.5rem',
+        100: '25rem',
         120: '30rem',
         260: '88.25rem',
       },
       backgroundImage: {
         homeBg: 'radial-gradient(55.94% 238.07% at 33.15% 50%, #311F4E 0%, #000 100%)',
-        photoBorder: 'linear-gradient(180deg, #569FFF 0%, #CC56FF 100%) border-box'
+        photoBorder: 'linear-gradient(180deg, #569FFF 0%, #CC56FF 100%) border-box',
+        skillCard: 'radial-gradient(50% 50% at 50% 50%, #000 0%, #151716 100%)',
       },
       borderRadius: {
         '4.5-xl': '2rem',
@@ -42,6 +48,8 @@ export default {
       },
       boxShadow: {
         'line-shadow': '0px 0px 4px 0px #FFF',
+        'react-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
+        'skill-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
       },
     },
   },

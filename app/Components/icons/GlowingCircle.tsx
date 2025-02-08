@@ -1,6 +1,14 @@
-const GlowingCircle = ({}) => {
+interface GlowingCircleProps {
+    px?: number;
+    sign?: string;
+}
+
+const GlowingCircle:React.FC<GlowingCircleProps> = ({px, sign}) => {
+
+    const position = (sign === "+")? `top-9` : `bottom-9`;
+
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102" fill="none">
+        <svg className= {`relative ${position} z-10`} xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102" fill="none">
             <g filter="url(#filter0_d_63_30)">
                 <circle cx="51" cy="51" r="13" fill="white" />
                 <circle cx="51" cy="51" r="17" stroke="#E50F0F" strokeWidth="8" />
