@@ -6,6 +6,32 @@
     background: linear-gradient(180deg, #569FFF 0%, #CC56FF 100%) border-box;
 }
 
+.backend-border {
+    background: radial-gradient(36.62% 36.62% at 50% 50%, #000 0%, #151716 100%) padding-box,
+                linear-gradient(180deg, rgba(225, 11, 11, 0.86) 0%, #E047E2 100%) border-box;
+    text-shadow: -2px 4px 4px rgba(225, 11, 11, 0.86);
+}
+
+.go-border {
+    background: radial-gradient(38.75% 38.75% at 50% 50%, #000 0%, #080B3F 100%) padding-box,
+    linear-gradient(180deg, #32A3C2 0%, #C936D4 100%) border-box;
+}
+
+.sql-border {
+    background: radial-gradient(40.25% 40.25% at 50% 50%, #000 0%, #042414 100%) padding-box,
+    linear-gradient(180deg, #AB23D1 0%, #3576CC 100%) border-box;
+}
+
+.node-border {
+    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #331154 100%) padding-box,
+    linear-gradient(180deg, #C936D4 0%, #C51D1D 100%) border-box;
+}
+
+.mongo-border {
+    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #610948 100%) padding-box,
+    linear-gradient(180deg, #E41E1E 0%, #E312A8 100%) border-box;
+}
+
 .Hi-shadow {
     text-shadow: 0px 1px 60px #CC56FF;
 }
