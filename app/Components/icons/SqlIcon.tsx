@@ -18,14 +18,12 @@ const SqlIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_95_4" x="0" y="0" width="77.9421" height="98" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="4.5" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.737255 0 0 0 0 0.94902 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_95_4" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_95_4" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="4.5" result="BLURRED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="BLURRED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                 </filter>
             </defs>
         </svg>

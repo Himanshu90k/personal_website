@@ -8,14 +8,13 @@ const MongoIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_95_186" x="0" y="0" width="68" height="129" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="4.5" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.278431 0 0 0 0 0.647059 0 0 0 0 0.286275 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_95_186" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_95_186" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="4.5" result="BLURRED_SHADOW" />
+                    <feColorMatrix in="BLURRED_SHADOW" type="matrix" values="0 0 0 0 0.278431 0 0 0 0 0.647059 0 0 0 0 0.286275 0 0 0 1 0" result="COLORED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="SourceGraphic" />
+                        <feMergeNode in="COLORED_SHADOW" />
+                    </feMerge>
                 </filter>
                 <linearGradient id="paint0_linear_95_186" x1="-27.3224" y1="57.6618" x2="36.9881" y2="122.12" gradientUnits="userSpaceOnUse">
                     <stop offset="0.231" stopColor="#999875" />

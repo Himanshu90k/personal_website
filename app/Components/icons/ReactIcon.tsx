@@ -30,14 +30,13 @@ const ReactIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_66_45" x="0" y="0" width="176" height="176" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="9" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.0724998 0 0 0 0 0.668222 0 0 0 0 1 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_66_45" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_66_45" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="9" result="BLURRED_SHADOW" />
+                    <feColorMatrix in="BLURRED_SHADOW" type="matrix" values="0 0 0 0 0.0724998 0 0 0 0 0.668222 0 0 0 0 1 0 0 0 1 0" result="COLORED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="COLORED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                 </filter>
             </defs>
         </svg>

@@ -11,14 +11,13 @@ const CssIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_80_34" x="5.33325" y="-1.33325" width="149.333" height="162.667" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="9" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.466667 0 0 0 0 0.741176 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_80_34" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_80_34" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="9" result="BLURRED_SHADOW" />
+                    <feColorMatrix in="BLURRED_SHADOW" type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.466667 0 0 0 0 0.741176 0 0 0 1 0" result="COLORED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="COLORED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                 </filter>
                 <clipPath id="clip0_80_34">
                     <rect width="160" height="160" fill="white" />

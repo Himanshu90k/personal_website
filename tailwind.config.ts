@@ -63,6 +63,7 @@ export default {
         'sql-shadow': '0px 0px 14px #CC56FF',
         'node-shadow': '0px 0px 14px #BC2BFA',
         'mongo-shadow': '0px 0px 14px #E41E1E',
+        'line-dot-shadow': '0px 0px 16px 6px #E50F0F',
       },
     },
   },

@@ -19,14 +19,12 @@ const NodeIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_95_191" x="0" y="0" width="98" height="108" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="4.5" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.639216 0 0 0 0 0.4 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_95_191" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_95_191" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="4.5" result="BLURRED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="SourceGraphic" />
+                        <feMergeNode in="BLURRED_SHADOW" />
+                    </feMerge>
                 </filter>
             </defs>
         </svg>

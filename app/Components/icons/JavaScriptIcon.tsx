@@ -9,14 +9,13 @@ const JavaScriptIcon = () => {
             </g>
             <defs>
                 <filter id="filter0_d_73_7" x="0.627197" y="0.0756836" width="140.746" height="154.808" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="9" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0.945098 0 0 0 0 0.74902 0 0 0 0 0.133333 0 0 0 1 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_73_7" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_73_7" result="shape" />
+                    <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
+                    <feGaussianBlur in="SHADOW" stdDeviation="9" result="BLURRED_SHADOW" />
+                    <feColorMatrix in="BLURRED_SHADOW" type="matrix" values="0 0 0 0 0.945098 0 0 0 0 0.74902 0 0 0 0 0.133333 0 0 0 1 0" result="COLORED_SHADOW" />
+                    <feMerge>
+                        <feMergeNode in="COLORED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                 </filter>
             </defs>
         </svg>

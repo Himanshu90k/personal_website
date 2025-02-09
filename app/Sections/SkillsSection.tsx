@@ -1,4 +1,3 @@
-import GlowingCircle from "../Components/icons/GlowingCircle";
 import ReactCard from "../Components/skill_cards/ReactCard";
 import JavaScriptCard from "../Components/skill_cards/JavaScriptCard";
 import TypeScriptCard from "../Components/skill_cards/TypeScriptCard";
@@ -17,11 +16,13 @@ const SkillsSection = () => {
     return (
         <section className="relative -z-10 h-fit w-screen bg-blackBg">
             {/* Skill Line */}
-            <div className="flex flex-col w-fit items-center pl-12 pt-24">
-                <GlowingCircle px={9} sign="+" />
+            <div className="flex flex-col w-fit items-center pl-24 py-10">
+                {/* circle */}
+                <div className="relative top-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
                 {/* line */}
                 <div className="w-2 h-260 bg-white shadow-line-shadow"></div>
-                <GlowingCircle px={9} sign="-" />
+                {/* circle */}
+                <div className="relative bottom-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
             </div>
 
             {/* Skill Cards */}
@@ -34,11 +35,13 @@ const SkillsSection = () => {
             <NextJsCard />
 
             {/* Skill Line */}
-            <div className="flex flex-col w-fit items-center pl-12">
-                <GlowingCircle px={9} sign="+" />
+            <div className="flex flex-col w-fit items-center pl-24 py-10">
+                {/* circle */}
+                <div className="relative top-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
                 {/* line */}
                 <div className="w-2 h-260 bg-white shadow-line-shadow"></div>
-                <GlowingCircle px={9} sign="-" />
+                {/* circle */}
+                <div className="relative bottom-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
             </div>
 
             {/* Backend Skills */}
@@ -97,7 +100,7 @@ const SkillsSection = () => {
                     </div>
                 </div>
 
-                {/* Node circle */}
+                {/* MongoDB circle */}
                 <div className="absolute bottom-[5%] left-0 flex items-center gap-4">
                 <div className="w-fit">
                         <h3 className="font-josefin text-white text-4xl font-bold">MongoDB</h3>
