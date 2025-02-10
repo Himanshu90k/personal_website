@@ -10,19 +10,18 @@ import SqlIcon from "../Components/icons/SqlIcon";
 import NodeIcon from "../Components/icons/NodeIcon";
 import MongoIcon from "../Components/icons/MongoIcon";
 import Arrow from "../Components/icons/Arrow";
+import GlowingDot from "../Components/icons/GlowingDot";
+import GlowingLine from "../Components/icons/GlowingLine";
 
 
 const SkillsSection = () => {
     return (
         <section className="relative -z-10 h-fit w-screen bg-blackBg">
             {/* Skill Line */}
-            <div className="flex flex-col w-fit items-center pl-24 py-10">
-                {/* circle */}
-                <div className="relative top-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
-                {/* line */}
-                <div className="w-2 h-260 bg-white shadow-line-shadow"></div>
-                {/* circle */}
-                <div className="relative bottom-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
+            <div className="flex flex-col w-fit items-center pl-14 py-10">
+                <GlowingDot position="top-12" />
+                <GlowingLine />
+                <GlowingDot position="-top-12" />
             </div>
 
             {/* Skill Cards */}
@@ -35,13 +34,10 @@ const SkillsSection = () => {
             <NextJsCard />
 
             {/* Skill Line */}
-            <div className="flex flex-col w-fit items-center pl-24 py-10">
-                {/* circle */}
-                <div className="relative top-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
-                {/* line */}
-                <div className="w-2 h-260 bg-white shadow-line-shadow"></div>
-                {/* circle */}
-                <div className="relative bottom-2 w-8 h-8 bg-white border-8px border-customRed rounded-5-xl shadow-line-dot-shadow border-solid"></div>
+            <div className="flex flex-col w-fit items-center pl-14 py-10">
+                <GlowingDot position="top-12" />
+                <GlowingLine />
+                <GlowingDot position="-top-12" />
             </div>
 
             {/* Backend Skills */}

@@ -12,8 +12,8 @@ const MongoIcon = () => {
                     <feGaussianBlur in="SHADOW" stdDeviation="4.5" result="BLURRED_SHADOW" />
                     <feColorMatrix in="BLURRED_SHADOW" type="matrix" values="0 0 0 0 0.278431 0 0 0 0 0.647059 0 0 0 0 0.286275 0 0 0 1 0" result="COLORED_SHADOW" />
                     <feMerge>
-                        <feMergeNode in="SourceGraphic" />
                         <feMergeNode in="COLORED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
                     </feMerge>
                 </filter>
                 <linearGradient id="paint0_linear_95_186" x1="-27.3224" y1="57.6618" x2="36.9881" y2="122.12" gradientUnits="userSpaceOnUse">

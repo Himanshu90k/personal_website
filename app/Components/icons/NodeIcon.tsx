@@ -22,8 +22,8 @@ const NodeIcon = () => {
                     <feOffset in="SourceGraphic" dx="0" dy="0" result="SHADOW" />
                     <feGaussianBlur in="SHADOW" stdDeviation="4.5" result="BLURRED_SHADOW" />
                     <feMerge>
-                        <feMergeNode in="SourceGraphic" />
                         <feMergeNode in="BLURRED_SHADOW" />
+                        <feMergeNode in="SourceGraphic" />
                     </feMerge>
                 </filter>
             </defs>
