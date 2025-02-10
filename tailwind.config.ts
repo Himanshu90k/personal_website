@@ -54,7 +54,6 @@ export default {
         '4px': '4px',
       },
       boxShadow: {
-        'line-shadow': '0px 0px 4px 0px #FFF',
         'next-line-shadow': '0px 0px 9px 0px #FFF',
         'react-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
         'skill-card-shadow': '4px 4px 18px 20px rgba(0, 0, 0, 0.25)',
@@ -63,7 +62,6 @@ export default {
         'sql-shadow': '0px 0px 14px #CC56FF',
         'node-shadow': '0px 0px 14px #BC2BFA',
         'mongo-shadow': '0px 0px 14px #E41E1E',
-        'line-dot-shadow': '0px 0px 16px 6px #E50F0F',
       },
     },
   },
