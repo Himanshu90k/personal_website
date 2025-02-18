@@ -4,7 +4,7 @@ import ConnectionDot from "../icons/ConnectionDot";
 
 const GoCard = () => {
     return (
-        <div className="absolute top-[14%] right-[14%] flex items-center gap-4">
+        <div className="absolute top-[14%] right-[12%] flex items-center gap-4">
             <div className="relative w-50 h-50 flex justify-center items-center go-border border-8px border-transparent shadow-go-shadow rounded-10-xl">
                 <GoIcon />
                 <ConnectionDot position="-bottom-11" />

@@ -11,8 +11,7 @@ import NodeCard from "../Components/skill_cards/NodeCard";
 import MongoDbCard from "../Components/skill_cards/MonogDbCard";
 import GlowingCircle from "../Components/icons/GlowingCircle";
 import GlowingLine from "../Components/icons/GlowingLine";
-
-
+import Top from "../Components/skill_lines&dots/Top";
 
 const SkillsSection = () => {
     return (
@@ -41,19 +40,22 @@ const SkillsSection = () => {
             </div>
 
             {/* Back-End Skill Cards */}
-            <div className="absolute bottom-[5%] left-[15%] w-3/4 flex justify-center items-center h-1/3 p-2">
+            <div className="absolute bottom-[8%] left-[20%] min-w-[1100px] flex justify-center items-center h-1/3 p-2">
                 {/* backend circle */}
                 <div className="w-82 h-82 flex items-center justify-center shadow-backend-shadow rounded-12-xl border-12px backend-border border-transparent"
                 >
                     <h2 className="font-josefin text-white text-6xl italic font-bold">backend</h2>
                 </div>
-                
+
                 {/*Back-End Skill Cards */}
                 <GoCard />
                 <SqlCard />
                 <NodeCard />
                 <MongoDbCard />
-                
+
+                {/* connected lines and dots */}
+                <Top />
+
             </div>
         </section>
     )
