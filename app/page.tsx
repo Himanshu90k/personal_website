@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import HomeSection from "./Sections/HomeSection";
+import ProjectsSection from "./Sections/ProjectsSection";
 import SkillsSection from "./Sections/SkillsSection";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HomeSection />
       <SkillsSection />
+      <ProjectsSection />
     </div>
   );
 }

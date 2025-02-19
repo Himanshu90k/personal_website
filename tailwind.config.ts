@@ -12,6 +12,7 @@ export default {
         customRed: '#E50F0F',
         customPurple: '#CC56FF',
         blackBg: '#141212',
+        navBg: '#222',
       },
       fontFamily: {
         josefin: ["var(--josefin-sans)"],
